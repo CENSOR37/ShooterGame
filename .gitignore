@@ -332,3 +332,4 @@ ScriptCSharp/ShooterGame.RuntimeGlue/Properties/launchSettings.json
 ScriptCSharp/ManagedShooterGame/Properties/launchSettings.json
 ScriptCSharp/global.json
 Content/Temp/**
+/Content/_Temp/*
