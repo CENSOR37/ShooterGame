@@ -1,23 +1,38 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Metee Tanatip, Inc. All Rights Reserved.
 
 using UnrealBuildTool;
 
 public class ShooterGame : ModuleRules
 {
-	public ShooterGame(ReadOnlyTargetRules Target) : base(Target)
-	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput" });
+    public ShooterGame(ReadOnlyTargetRules Target) : base(Target)
+    {
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
-		PrivateDependencyModuleNames.AddRange(new string[] {  });
+        PublicDependencyModuleNames.AddRange(new[]
+        {
+            "Core",
+            "CoreUObject",
+            "Engine",
+            "InputCore",
+            "UMG",
+            "Slate",
+            "SlateCore",
+            "NetCore",
+            "NetCommon",
+            "Networking",
+            "GameplayTags",
+            "GameplayTasks",
+            "GameplayAbilities",
+        });
 
-		// Uncomment if you are using Slate UI
-		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
-		// Uncomment if you are using online features
-		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
-
-		// To include OnlineSubsystemSteam, add it to the plugins section in your uproject file with the Enabled attribute set to true
-	}
+        PrivateDependencyModuleNames.AddRange(new string[]
+        {
+            "AIModule",
+            "GameplayAbilities",
+            "GameplayTasks",
+            "GameplayTags",
+            "EnhancedInput",
+            "CommonUI",
+        });
+    }
 }

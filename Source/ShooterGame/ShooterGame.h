@@ -1,6 +1,5 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
+// Copyright Metee Tanatip, Inc. All Rights Reserved.
 
 #pragma once
 
 #include "CoreMinimal.h"
-
