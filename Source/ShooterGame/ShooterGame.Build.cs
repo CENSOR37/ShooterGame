@@ -23,6 +23,7 @@ public class ShooterGame : ModuleRules
             "GameplayTags",
             "GameplayTasks",
             "GameplayAbilities",
+            "NovaCore",
         });
 
         PrivateDependencyModuleNames.AddRange(new string[]
