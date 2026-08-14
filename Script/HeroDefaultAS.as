@@ -25,6 +25,7 @@ class AHeroDefaultAS : ANovaCharacter
     float Right;
 
     default WeaponMesh.SetCollisionEnabled(ECollisionEnabled::NoCollision);
+    default Cosmetic.bUseAttachParentBound = true;
 
 	UFUNCTION(BlueprintOverride)
 	void BeginPlay()
