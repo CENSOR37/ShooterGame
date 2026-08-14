@@ -20,7 +20,7 @@ namespace Nova
 	}
 
 	template <typename T>
-	T* Get(const AActor* Actor, const FName Name = NAME_None)
+	T* Get(const AActor* Actor, const FName Name)
 	{
 		static_assert(TIsDerivedFrom<T, UActorComponent>::IsDerived, "T must derive from UActorComponent");
 
