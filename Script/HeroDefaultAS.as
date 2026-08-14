@@ -59,7 +59,7 @@ class AHeroDefaultAS : ANovaCharacter
     UFUNCTION()
     void OnMouseY(FVector AxisValue)
     {
-        AddControllerPitchInput(AxisValue.X);
+        AddControllerPitchInput(-AxisValue.X);
     }
 
     UFUNCTION()
